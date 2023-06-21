@@ -8,3 +8,10 @@ export type Product = {
 	rating: number
 
 }
+
+export type ChooseUs = {
+	id: number,
+	name: string;
+	image: string;
+	description: string
+}
