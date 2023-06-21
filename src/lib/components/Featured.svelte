@@ -3,7 +3,7 @@
 	import { products } from '../../data';
 </script>
 
-<div class="grid grid-cols-3 gap-4">
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
 	{#each products as product, index}
 		<Product {product} />
 	{/each}

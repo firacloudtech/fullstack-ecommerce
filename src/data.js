@@ -109,3 +109,46 @@ export const products = [
 		description: 'ZENITH PENDANT LIGHT'
 	}
 ]
+
+
+/** @type Array<import('$lib/types').ChooseUs> */
+
+export const chooseUs = [
+	{
+		id: 0,
+		name: "GLOBAL DELIVERY",
+		image: '/images/Homepage/ChooseUs/1.svg',
+		description: "Experience Hassle-Free Shipping and Seamless Global Connectivity with Our Trustworthy and Efficient Delivery Service, Bringing the World to Your Fingertips!"
+	},{
+		id:1,
+		name: "FREE SHIPPING",
+		image: '/images/Homepage/ChooseUs/2.svg',
+		description: "Shop to Your Heart's Content Without Worrying About Shipping Costs: Our Free Shipping Service Delivers Your Purchases with a Smile, Straight to Your Doorstep!",
+
+
+	},
+	{
+		id:2,
+		name: "24/7 SUPPORTING",
+		image: '/images/Homepage/ChooseUs/3.svg',
+		description: "Shop with Confidence Anytime, Anywhere: Our Free Shipping Service Comes with 24/7 Support to Ensure Your Packages Arrive Safely and On Time!",
+
+	},{
+		id:3,
+		name: "DAILY EMAIL",
+		image: '/images/Homepage/ChooseUs/4.svg',
+		description: "Stay Up-to-Date with Your Deliveries: Enjoy the Convenience of Daily Email Updates with Our Free Shipping Service, Making Your Online Shopping Experience Even More Enjoyable!"
+	},
+	{
+		id: 4,
+		name: "EASY PAYMENT",
+		image: '/images/Homepage/ChooseUs/5.svg',
+		description: "Shop and Pay with Ease: Our Free Shipping Service Not Only Delivers Your Packages for Free, but Also Offers Easy Payment Options, Making Your Shopping Experience a Breeze!",
+	},{
+		id:5,
+		name: "MONTHLY  VOUCHER",
+		image: '/images/Homepage/ChooseUs/6.svg',
+		description: "More Than Just Free Shipping: Our Service Rewards Your Loyalty with Monthly Vouchers, Giving You More Reasons to Shop and Save on Your Favorite Products!",
+	}
+
+];
