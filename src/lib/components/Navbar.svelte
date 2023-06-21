@@ -2,7 +2,7 @@
 	import { page } from '$app/stores';
 	import { fade, fly } from 'svelte/transition';
 
-	let toggle = true;
+	let toggle = false;
 
 	/**
 	 * Sets the value of the toggle.
