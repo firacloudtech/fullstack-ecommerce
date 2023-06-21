@@ -1,20 +1,22 @@
 <script>
-	import { brands } from './data';
+	import Featured from '$lib/components/Featured.svelte';
+	import Product from '$lib/components/Product.svelte';
+	import { brands, products } from '../data';
 </script>
 
-<section id="hero" class="relative overflow-hidden mb-10 font-display">
+<section id="hero" class="relative overflow-hidden mb-10">
 	<img
-		class="absolute object-cover h-full w-full -z-10 top-0"
+		class="absolute object-cover h-full w-full -z-10 top-0 xl:object-scale-down"
 		src="./images/home/hero.png"
 		alt="home-hero"
 	/>
-	<div class="flex justify-between py-8 xl:py-20 px-4">
+	<div class="flex justify-between py-20 px-4 2xl:py-16">
 		<div class="w-1/2" />
 		<div class="w-1/2 pl-10">
 			<h3 class="text-lg xl:text-xl uppercase mb-5">Welcome to Our</h3>
-			<h1 class="text-5xl xl:text-8xl font-extrabold uppercase">Furniture</h1>
-			<h2 class="text-5xl xl:text-8xl font-bold uppercase">Gallery</h2>
-			<hr class="mt-4" />
+			<h1 class="text-5xl xl:text-8xl font-extrabold uppercase font-hero">Furniture</h1>
+			<h2 class="text-5xl xl:text-8xl font-bold uppercase font-hero">Gallery</h2>
+			<hr class="mt-1 w-1/2 border-slate-500" />
 			<div class="uppercase mt-4 font-bold">Browse our selections</div>
 			<p class="w-2/3 mt-5 text-sm text-gray-500">
 				Featuring sleek designs and innovative materials that seamlessly blend form and function.
@@ -23,13 +25,13 @@
 	</div>
 </section>
 <section id="gallery">
-	<div class="grid grid-cols-4 gap-6 h-auto px-40 font-display mb-10">
+	<div class="grid grid-cols-4 gap-6 h-auto px-40 mb-10 lg:px-10">
 		<div class="mx-auto px-10 bg-gray-200 w-full text-left py-12 overflow-hidden relative">
 			<img class="absolute -top-1 right-4 w-20" src="/images/home/light1.svg" alt="light-1" />
 			<img class="absolute -top-1 right-14 w-24" src="/images/home/light2.svg" alt="light-1" />
 			<div class="mt-48">
 				<h1 class="uppercase font-bold">Hanging light</h1>
-				<p class="mt-4 text-sm text-gray-500 font-display">
+				<p class="mt-4 text-sm text-gray-500">
 					Upgrade your space with our modern hanging light, featuring sleek lines, energy-efficient
 					LED lighting, and adjustable height.
 				</p>
@@ -56,11 +58,15 @@
 		</div>
 	</div>
 </section>
-<section id="trustedby" class="my-20">
+<section id="trustedby" class="my-20 lg:px-20">
 	<h1 class="text-center font-extrabold text-xl uppercase mb-10">Trusted by</h1>
-	<div class="grid grid-cols-6 px-40">
+	<div class="grid grid-cols-6">
 		{#each brands as brand}
 			<img src={brand.src} alt={brand.name} />
 		{/each}
 	</div>
+</section>
+<section class="text-center p-10">
+	<h1 class="uppercase font-extrabold text-xl mb-10">Featured Products</h1>
+	<Featured />
 </section>

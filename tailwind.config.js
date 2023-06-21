@@ -4,8 +4,11 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'display' : ['Poppins']
+        'hero' : ['Montserrat', 'sans-serif'],
       },
+      maxWidth :{
+        '8xl': '1440px'
+      }
     },
   },
   plugins: [],
